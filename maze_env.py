@@ -81,7 +81,7 @@ class Maze(tk.Tk):
         self.agent = self._build_rectangle(origin, 'red')
 
         # create target
-        self.target = self._build_rectangle(origin + UNIT * 2, 'yellow')
+        self.target = self._build_rectangle(origin + UNIT * 2, 'blue')
 
         # pack all
         self.canvas.pack()
