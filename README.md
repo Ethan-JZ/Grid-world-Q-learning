@@ -1,9 +1,9 @@
 # Implement Q-learning on a 2D grid world
 
-This project is to use Q-learning to let the agent, a red square 🟥, find its target in a simple 2D maze. The black square ⬛️ is an obstacle, which will terminate the movement of the agent once it hits there. The yellow square 🟨 is the target that the agent is trying to search in this 2D maze.
+This project is to use Q-learning to let the agent, a red square 🟥, find its target in a simple 2D maze. The black square ⬛️ is an obstacle, which will terminate the movement of the agent once it hits there. The blue square 🟦 is the target that the agent is trying to search in this 2D maze.
 
 ## Environment Setting
-The environment is in a $4 \times 4$ grid world. The red square agent 🟥 moves in 4 actions: `up`, `down`, `right` and `left`. If the agent hits the black square obstacle ⬛️, a penalty `reward = -1` will be applied. If the agent hits the target square 🟨, a `reward = 1` will be applied. Otherwise, the agent get `reward = 0`. If the agent hit the boundary, it will stays at the current state. 
+The environment is in a $4 \times 4$ grid world. The red square agent 🟥 moves in 4 actions: `up`, `down`, `right` and `left`. If the agent hits the black square obstacle ⬛️, a penalty `reward = -1` will be applied. If the agent hits the target square 🟦, a `reward = 1` will be applied. Otherwise, the agent get `reward = 0`. If the agent hit the boundary, it will stays at the current state. 
 
 ![Environment setting](img/env.png)
 
@@ -13,7 +13,7 @@ Please turn to his course if you speak fluent Chinese for more thoughtful unders
 
 ## What are expected in the output
 
-After several episodes, you are expected to see the following agent movement for each step, from start to the target 🟨. But also there are a lot of episodes that the agent fails to get the the target and hit the obstacles.
+After several episodes, you are expected to see the following agent movement for each step, from start to the target 🟦. But also there are a lot of episodes that the agent fails to get the the target and hit the obstacles.
 
 ![Movement in env](img/animation.gif)
 
